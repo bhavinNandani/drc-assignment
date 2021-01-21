@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+	Rails 6.0.3.4
+	Ruby 2.7.2
+	psql 13.1
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+	Commands to be run while on Production :
 
-* Configuration
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+	To push the code to live commands :
 
-* ...
+
+		to commit the code
+			git add .   # if we need to commit only single line than we only pass the file name
+			git commit -m "Message goes here"
+
+		to push to live
+
+			git push heroku master
