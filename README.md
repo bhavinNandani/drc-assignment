@@ -23,3 +23,17 @@
 		to push to live
 
 			git push heroku master
+
+			heroku run rake db:migrate
+
+			heroku ps:scale web=1
+
+			heroku psql
+
+			heroku open
+
+			heroku logs --tail
+
+			heroku run rails console
+
+			heroku run rake db:migrate
