@@ -1,0 +1,27 @@
+<header class="masthead mb-auto">
+  <div class="inner">
+    <h3 class="masthead-brand">Hospital Management</h3>
+    <nav class="nav nav-masthead justify-content-center">
+
+<!--
+      <a class="nav-link active" href="#">Home</a>
+      <a class="nav-link" href="#">Features</a>
+      <a class="nav-link" href="#">Contact</a>
+
+ -->
+      <% if doctors_user_signed_in? %>
+		    <a href="<%= destroy_doctors_user_session_url %>" data-method="delete" class="nav-link float-right">Logout</a>
+			<% elsif patients_user_signed_in?%>
+					<a href="<%= appointments_url %>" class="nav-link float-right">Appointment</a>
+			    <a href="<%= destroy_doctors_user_session_url %>" data-method="delete" class="nav-link float-right">Logout</a>
+			<% else %>
+				<a href="<%= new_doctors_user_session_url %>" class="nav-link float-right" >Doctor Sign In</a>
+				<a href="<%= new_patients_user_session_url %>" class="nav-link float-right" >Patient Sign In</a>
+			<% end %>
+
+
+    </nav>
+  </div>
+</header>
+
+

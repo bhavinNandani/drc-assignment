@@ -7,6 +7,8 @@
 
 
 	Commands to be run while on Production :
+		yarn add bootstrap@4.3.1 jquery popper.js
+
 
 
 

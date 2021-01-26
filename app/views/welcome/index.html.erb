@@ -1,4 +1,14 @@
-<h2>Hello World</h2>
+<% if doctors_user_signed_in? %>
+ DOCTOR =>  <%= current_doctors_user["first_name"] %> <%= current_doctors_user["last_name"] %>
+<% elsif patients_user_signed_in?%>
+ PATIENT => <%= current_patients_user["first_name"] %> <%= current_patients_user["last_name"] %>
+<% end %>
 <p>
   The time is now: <%= Time.now %>
 </p>
+<!--
+<h1 class="cover-heading">Cover your page.</h1>
+<p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+<p class="lead">
+  <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+</p> -->

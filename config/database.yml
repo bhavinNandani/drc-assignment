@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: assignment_development
+  database: assignment_1_development
   pool: 5
   username: postgres
   password: Bhavin@3125
@@ -43,7 +43,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: assignment_test
+  database: assignment_1_test
   pool: 5
   username: postgres
   password: Bhavin@3125
@@ -53,7 +53,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: assignment_production
+  database: assignment_1_production
   pool: 5
   username: postgres
   password: Bhavin@3125
